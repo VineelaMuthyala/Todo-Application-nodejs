@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+
+
+### // Scenario 2
+GET http://localhost:3000/todos/?priority=HIGH
+
+### // SCENARIO 3
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+### // SCENARIO 4
+GET http://localhost:3000/todos/?search_q=Buy
+
+### // Scenario 5
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+
+### // Scenario 6
+GET http://localhost:3000/todos/?category=HOME
+
+### // Scenario 7
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+
+### API 2 Returns a specific todo based on the todo ID
+GET http://localhost:3000/todos/1/
+
+### API 3 Returns a list of all todos with a specific due date in the query parameter `/agenda/?date=2021-12-12`
+GET http://localhost:3000/agenda/?date=2021-4-4
+
+
